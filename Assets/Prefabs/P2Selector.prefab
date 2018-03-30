@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1894367029330020}
+  m_IsPrefabParent: 1
+--- !u!1 &1894367029330020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4667667783578536}
+  - component: {fileID: 114934229565831490}
+  - component: {fileID: 114968127012669644}
+  m_Layer: 0
+  m_Name: P2Selector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4667667783578536
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894367029330020}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114934229565831490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894367029330020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1031567f216f941b7a1a96ea7c72a301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
+  Player: {fileID: 114968127012669644}
+  selectedTile: 0
+  maxTiles: 0
+  confirmSound: event:/DoubleClick
+  selectSound: event:/Click
+  PreviewTile: {fileID: 114441702592645752, guid: 79dfd88eae4a7469184d19d0dd7ae081,
+    type: 2}
+  BackGroudImage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  UnitSelectionKeys: 380000003900000030000000
+  MoveNorthKey: 105
+  MoveNortheastKey: 44
+  MoveSoutheastKey: 0
+  MoveSouthKey: 107
+  MoveSouthwestKey: 0
+  MoveNorthwestKey: 109
+  RotateAnticlockwiseKey: 106
+  RotateClockwiseKey: 108
+  MirrorToggleKey: 111
+  DeployKey: 117
+--- !u!114 &114968127012669644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894367029330020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e8281f0e54b4641b4160a929506fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Player 2
+  Color: {r: 1, g: 0.14814016, b: 0.14814016, a: 0}
+  Loadout: {fileID: 11400000, guid: 605250f3d6148fb438c42e81e4772f31, type: 2}
+  MirrorDefault: 1
